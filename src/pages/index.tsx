@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from '../components/nav'
 
 const HomePage: React.FC = () => (
   <>
@@ -6,54 +7,8 @@ const HomePage: React.FC = () => (
       <div className="KW_progressBar"></div>
     </div>
     <div className="page">
-      <nav id="colorlib-main-nav" role="navigation">
-        <a
-          href="#"
-          className="js-colorlib-nav-toggle colorlib-nav-toggle active"
-        >
-          <i />
-        </a>
-        <div className="js-fullheight colorlib-table">
-          <div
-            className="img"
-            style={{ backgroundImage: 'url(images/avatar_961.jpg)' }}
-          />
-          <div className="colorlib-table-cell js-fullheight">
-            <div className="row no-gutters">
-              <div className="col-md-12 text-center">
-                <h1 className="mb-4">
-                  <a href="index.html" className="logo">
-                    Diego Mais
-                  </a>
-                </h1>
-                <ul>
-                  <li className="active">
-                    <a href="index.html">
-                      <span>
-                        <small>01</small>Home
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about.html">
-                      <span>
-                        <small>02</small>Resume
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact.html">
-                      <span>
-                        <small>03</small>Contact
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Nav active="home" />
+
       <div id="colorlib-page">
         <header>
           <div className="container">
