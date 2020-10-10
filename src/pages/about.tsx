@@ -1,4 +1,5 @@
 import React from 'react'
+import Experience from '../components/experience'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import Loader from '../components/loader'
@@ -157,102 +158,9 @@ const AboutPage: React.FC = () => (
                     </p>
                   </div>
                 </div>
-                <div className="exp mt-5 ftco-animate">
-                  <h2 className="mb-4">Experience</h2>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Operations Manager <span> - Bank of Brazil</span>{' '}
-                      </h4>
-                      <p className="location">Camboriú - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2018 - Present</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Relationship Manager <span> - Bank of Brazil</span>{' '}
-                      </h4>
-                      <p className="location">
-                        Balneário Camboriú - SC, Brazil
-                      </p>
-                    </div>
-                    <div className="year">
-                      <p>2017 - 2018</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        General Manager <span> - Bank of Brazil</span>{' '}
-                      </h4>
-                      <p className="location">Blumenau - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2015 - 2017</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        General Manager <span> - Bank of Brazil</span>{' '}
-                      </h4>
-                      <p className="location">Vitor Meireles - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2011 - 2015</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Relationship Manager <span> - Bank of Brazil</span>{' '}
-                      </h4>
-                      <p className="location">Blumenau - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2008 - 2011</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Relationship Manager{' '}
-                        <span> - State Bank of Santa Catarina</span>{' '}
-                      </h4>
-                      <p className="location">Blumenau - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2006 - 2008</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Operational Services Coordinator{' '}
-                        <span> - State Bank of Santa Catarina</span>{' '}
-                      </h4>
-                      <p className="location">Blumenau - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2006</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Bank Officer{' '}
-                        <span> - State Bank of Santa Catarina</span>{' '}
-                      </h4>
-                      <p className="location">Blumenau - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2004 - 2006</p>
-                    </div>
-                  </div>
-                </div>
+
+                <Experience />
+
                 <div className="exp mt-5 ftco-animate">
                   <h2 className="mb-4">Education</h2>
                   <div className="exp-wrap py-4">
