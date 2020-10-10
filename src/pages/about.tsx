@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../components/footer'
 import Header from '../components/header'
+import Loader from '../components/loader'
 import Nav from '../components/nav'
 
 const AboutPage: React.FC = () => (
@@ -592,29 +593,7 @@ const AboutPage: React.FC = () => (
           </div>
         </section>
         <Footer />
-        <div id="ftco-loader" className="show fullscreen">
-          <svg className="circular" width="48px" height="48px">
-            <circle
-              className="path-bg"
-              cx="24"
-              cy="24"
-              r="22"
-              fill="none"
-              strokeWidth="4"
-              stroke="#eeeeee"
-            />
-            <circle
-              className="path"
-              cx="24"
-              cy="24"
-              r="22"
-              fill="none"
-              strokeWidth="4"
-              strokeMiterlimit="10"
-              stroke="#F96D00"
-            />
-          </svg>
-        </div>
+        <Loader />
       </div>
     </div>
   </>
