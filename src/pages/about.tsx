@@ -1,6 +1,4 @@
 import React from 'react'
-import Education from '../components/education'
-import Experience from '../components/experience'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import Loader from '../components/loader'
@@ -159,10 +157,6 @@ const AboutPage: React.FC = () => (
                     </p>
                   </div>
                 </div>
-
-                <Experience />
-
-                <Education />
               </div>
             </div>
 
