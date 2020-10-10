@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../components/header'
 import Nav from '../components/nav'
 
 const HomePage: React.FC = () => (
@@ -10,29 +11,7 @@ const HomePage: React.FC = () => (
       <Nav active="home" />
 
       <div id="colorlib-page">
-        <header>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="colorlib-navbar-brand">
-                  <a className="colorlib-logo" href="index.html">
-                    <span
-                      className="logo-img"
-                      style={{ backgroundImage: 'url(images/avatar_479.jpg)' }}
-                    />
-                    Diego Mais
-                  </a>
-                </div>
-                <a
-                  href="#"
-                  className="js-colorlib-nav-toggle colorlib-nav-toggle"
-                >
-                  <i />
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header />
         <section className="home-slider owl-carousel js-fullheight">
           <div className="slider-item js-fullheight">
             <div className="overlay"></div>

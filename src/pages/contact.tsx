@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from '../components/header'
 import Nav from '../components/nav'
 
 const ContactPage: React.FC = () => (
@@ -10,29 +11,7 @@ const ContactPage: React.FC = () => (
       <Nav active="contact" />
 
       <div id="colorlib-page">
-        <header>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="colorlib-navbar-brand">
-                  <a className="colorlib-logo" href="index.html">
-                    <span
-                      className="logo-img"
-                      style={{ backgroundImage: 'url(images/avatar_479.jpg)' }}
-                    ></span>
-                    Diego Mais
-                  </a>
-                </div>
-                <a
-                  href="#"
-                  className="js-colorlib-nav-toggle colorlib-nav-toggle"
-                >
-                  <i></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header />
         <section className="ftco-section contact-section">
           <div className="container mt-5">
             <div className="row d-flex mb-5 contact-info">
