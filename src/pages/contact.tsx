@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/footer'
 import Header from '../components/header'
 import Nav from '../components/nav'
 
@@ -81,107 +82,7 @@ const ContactPage: React.FC = () => (
             </div>
           </div>
         </section>
-        <footer className="ftco-footer ftco-bg-dark ftco-section">
-          <div className="container">
-            <div className="row mb-5 justify-content-center">
-              <div className="col-md-5 text-center">
-                <div className="ftco-footer-widget mb-5">
-                  <ul className="ftco-footer-social list-unstyled">
-                    <li className="ftco-animate">
-                      <a
-                        href="http://www.linkedin.com/in/diegomais/"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <span className="icon-linkedin" />
-                      </a>
-                    </li>
-                    <li className="ftco-animate">
-                      <a
-                        href="http://www.github.com/diegomais/"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <span className="icon-github" />
-                      </a>
-                    </li>
-                    <li className="ftco-animate">
-                      <a
-                        href="skype:diego_mais?call"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <span className="icon-skype" />
-                      </a>
-                    </li>
-                    <li className="ftco-animate">
-                      <a
-                        href="http://www.twitter.com/diegomais"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <span className="icon-twitter" />
-                      </a>
-                    </li>
-                    <li className="ftco-animate">
-                      <a
-                        href="http://www.facebook.com/diegomais8"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <span className="icon-facebook" />
-                      </a>
-                    </li>
-                    <li className="ftco-animate">
-                      <a
-                        href="http://www.instagram.com/diegomais"
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <span className="icon-instagram"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="ftco-footer-widget">
-                  <h2 className="mb-3">Contact Me</h2>
-                  <p>
-                    Email:{' '}
-                    <a href="mailto:diegomais@live.com">diegomais@live.com</a>
-                  </p>
-                  <p>
-                    Phone: <a href="tel:+5547996168008">+55 (47) 99616-8008</a>
-                  </p>
-                  <p>
-                    Skype: <a href="skype:diego_mais?call">diego_mais</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-12 text-center">
-                <p>
-                  Copyright &copy;
-                  {JSON.stringify(new Date().getFullYear())} All rights reserved
-                  | This template is made
-                  <i
-                    className="icon-heart"
-                    aria-hidden="true"
-                    style={{ color: 'red' }}
-                  ></i>{' '}
-                  by
-                  <a
-                    href="https://colorlib.com"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Colorlib
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
         <div id="ftco-loader" className="show fullscreen">
           <svg className="circular" width="48px" height="48px">
             <circle
