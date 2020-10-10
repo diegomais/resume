@@ -1,4 +1,5 @@
 import React from 'react'
+import Education from '../components/education'
 import Experience from '../components/experience'
 import Footer from '../components/footer'
 import Header from '../components/header'
@@ -161,63 +162,7 @@ const AboutPage: React.FC = () => (
 
                 <Experience />
 
-                <div className="exp mt-5 ftco-animate">
-                  <h2 className="mb-4">Education</h2>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Full Stack Web Development Certification{' '}
-                        <span> - freeCodeCamp</span>{' '}
-                      </h4>
-                      <p className="location">San Francisco - CA, USA</p>
-                    </div>
-                    <div className="year">
-                      <p>2019</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        React Nanodegree<span> - Udacity</span>{' '}
-                      </h4>
-                      <p className="location">São Paulo - SP, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2018 - 2019</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Executive MBA in Financial Business
-                        <span>
-                          {' '}
-                          - University of Valley of Sinos River - UNISINOS
-                        </span>{' '}
-                      </h4>
-                      <p className="location">Blumenau - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2009 - 2011</p>
-                    </div>
-                  </div>
-                  <div className="exp-wrap py-4">
-                    <div className="desc">
-                      <h4>
-                        Bachelor of Science in Information Systems
-                        <span>
-                          {' '}
-                          - Metropolitan College of Blumenau -
-                          FAMEBLU/UNIASSELVI
-                        </span>{' '}
-                      </h4>
-                      <p className="location">Blumenau - SC, Brazil</p>
-                    </div>
-                    <div className="year">
-                      <p>2004 - 2009</p>
-                    </div>
-                  </div>
-                </div>
+                <Education />
               </div>
             </div>
             <div className="row mt-5 flex-column ftco-animate">
