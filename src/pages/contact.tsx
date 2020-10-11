@@ -1,12 +1,28 @@
+import { GetStaticProps } from 'next'
 import React from 'react'
 import Footer from '../components/footer'
 import Header from '../components/header'
 import Loader from '../components/loader'
 import Nav from '../components/nav'
 import ProgressBar from '../components/progress-bar'
-import contacts from '../constants/contacts'
+import prismic from '../lib/prismic'
+import { GET_ALL_CONTACTS } from '../lib/queries'
 
-const ContactPage: React.FC = () => (
+interface Contact {
+  footer: boolean
+  icon: string
+  label: string
+  social: boolean
+  target: string
+  title: string
+  type: string
+}
+
+interface ContactProps {
+  contacts: Contact[]
+}
+
+const ContactPage: React.FC<ContactProps> = ({ contacts }) => (
   <>
     <ProgressBar />
     <div className="page">
@@ -53,3 +69,15 @@ const ContactPage: React.FC = () => (
 )
 
 export default ContactPage
+
+export const getStaticProps: GetStaticProps<ContactProps> = async () => {
+  const { data } = await prismic.query({ query: GET_ALL_CONTACTS })
+
+  const contacts = data.allContacts.edges.map(({ node }) => ({
+    ...node,
+    target: node.target.url,
+    type: node._meta.uid
+  }))
+
+  return { props: { contacts } }
+}
