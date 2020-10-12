@@ -7,7 +7,7 @@ import Loader from '../components/loader'
 import Nav from '../components/nav'
 import ProgressBar from '../components/progress-bar'
 
-const ContactPage: React.FC = () => (
+const ExperienceAndEducationPage: React.FC = () => (
   <>
     <ProgressBar />
     <div className="page">
@@ -28,4 +28,4 @@ const ContactPage: React.FC = () => (
   </>
 )
 
-export default ContactPage
+export default ExperienceAndEducationPage
